@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050505" />
+    <title>MESTO Owner</title>
+    <script>
+      try {
+        var t = localStorage.getItem("mesto-theme") || "dark";
+        var dark = t === "dark" || (t === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/assets/index-J_6vV1Bq.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-eh7GOwF2.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

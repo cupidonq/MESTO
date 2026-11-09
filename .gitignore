@@ -1,0 +1,9 @@
+.env
+.env.*
+!env.production.example
+backups/
+data/
+node_modules/
+local/runtime/
+*.zip
+*.log
